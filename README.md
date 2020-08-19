@@ -12,9 +12,10 @@ A Voice Recognition React News Application
 - CSS
 - BOOTSTRAP
 - Classnames
-- Material UI
+- Material UI (`https://material-ui.com`)
 - Words To Numbers
-- Alan-AI
+- Alan AI (`http://alan.app`)
+- News API (`https://newsapi.org`)
 - Github Hosting
 
 ## Scripts
