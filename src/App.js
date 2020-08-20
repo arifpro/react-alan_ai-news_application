@@ -18,7 +18,7 @@ const alanKey = 'b86efccc5b881fe5c3b6157ceddd47572e956eca572e1d8b807a3e2338fdd0d
 
 const App = () => {
   const [newsArticles, setNewsArticles] = useState([]);
-  const [activeArticle, setActiveArticle] = useState(0);
+  const [activeArticle, setActiveArticle] = useState(-1);
   const classes = useStyles();
 
   useEffect(() => {
@@ -27,6 +27,7 @@ const App = () => {
       onCommand: ({ command, articles }) => {
         if (command === 'newHeadlines') {
           setNewsArticles(articles);
+          setActiveArticle(-1);
         } else if (command === 'highlight') {
           setActiveArticle(prevActiveArticle => prevActiveArticle + 1);
         }

@@ -55,7 +55,7 @@ const NewsCards = ({ articles, activeArticle }) => {
                 {
                     articles.map((article, index) => (
                         <Grid item xs={12} sm={6} md={4} lg={3} style={{ display: 'flex' }}>
-                            <NewsCard article={article} index={index} />
+                            <NewsCard article={article} activeArticle={activeArticle} index={index} />
                         </Grid>
                     ))
                 }
